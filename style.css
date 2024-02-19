@@ -9,17 +9,31 @@ body {
   }
   
   h1 {
-        text-align: center;
-        color: white;
-        font-family: Arial, Helvetica, sans-serif;
-        
+    text-align: left;
+    color: white;
+    font-size: 2.25em;
+    font-family: "Rowdies", sans-serif;
+    font-weight: 700;
+    font-style: normal;
   }
   
   h2 {
+    text-align: left;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 520;
+    font-style:normal;
+    font-variation-settings:
+      "wdth" 100;
   }
   
+  img {
+    border-radius: 50%;
+    width : 186px;
+    height : 186px;
+    }
+
   .card {
     width: 11.875em;
     height: 7.5em;
@@ -43,7 +57,14 @@ body {
   }
   
   a {color : white;
-        font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 520;
+    font-style:bold;
+    font-variation-settings:
+      "wdth" 100;
   }
   
   .card::before {
@@ -76,4 +97,5 @@ body {
       } 
   
   #SecondBloc{margin-left: 3%;}
+
   
