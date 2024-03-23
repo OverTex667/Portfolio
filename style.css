@@ -27,6 +27,17 @@ body {
     font-variation-settings:
       "wdth" 100;
   }
+
+  h3 {
+    text-align: left;
+    color: white;
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 520;
+    font-style:normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
   
   img {
     border-radius: 50%;
