@@ -1,112 +1,163 @@
-body {
-    margin-top: 5%;
-    margin-right: 20%;
-    margin-bottom: 30px;
-    margin-left: 20%;
-    background-color : rgb(10, 10, 10);
-    background-image: url(../Images/téléchargé.svg);
-    background-size: 100%;
-  }
-  
-  h1 {
-    text-align: left;
-    color: white;
-    font-size: 2.25em;
-    font-family: "Rowdies", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  h2 {
-    text-align: left;
-    color: white;
-    font-family: "Fredoka", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 520;
-    font-style:normal;
-    font-variation-settings:
-      "wdth" 100;
-  }
+/* Coming Soon WebPage template */
+/*      Created by Avada        */
 
-  h3 {
-    text-align: left;
-    color: white;
-    font-family: "Fredoka", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 520;
-    font-style:normal;
-    font-variation-settings:
-      "wdth" 100;
-  }
-  
-  img {
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/* Main */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ajouté pour inclure les bordures et le padding dans la taille totale des éléments */
+}
+
+/* Different Colors */
+#purple-light {
+    background-color: #9158c0;
+    width: 910px;
+    height: 910px;
+    top: -50%;
+    left: 0%; /* Ajusté pour éviter le débordement horizontal */
     border-radius: 50%;
-    width : 186px;
-    height : 186px;
+    z-index: 10;
+    position: absolute;
+    filter: blur(200px);
+    opacity: 0.2;
+}
+
+#blue-light {
+    background-color: #4e5bcf;
+    width: 910px;
+    height: 910px;
+    top: -50%;
+    right: 0%; /* Ajusté pour éviter le débordement horizontal */
+    border-radius: 50%;
+    z-index: 10;
+    position: absolute;
+    filter: blur(200px);
+    opacity: 0.2;
+}
+
+#dark-light {
+    background-color: #1d2127;
+    width: 1000px;
+    height: 1000px;
+    bottom: 0%;
+    right: 0%; /* Ajusté pour éviter le débordement horizontal */
+    border-radius: 50%;
+    z-index: 5;
+    position: absolute;
+    filter: blur(200px);
+    opacity: 1;
+}
+
+/* MA PP DISCORD */
+img {
+    border-radius: 50%;
+    width: 186px;
+    height: 186px;
+}
+
+
+/* Body */
+body {
+    background-color: #13171C;
+    background-image: url("../img/Square.svg");
+    background-size: cover;
+    text-align: center;
+    margin: 10px 0px 20px 0;
+
+    & main {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; /* Ajouté pour organiser les enfants en colonne */
+
+        .red {
+            color: white;
+            font-size: 60px;
+            margin-bottom: 15px;
+        }
+
+        & > div {
+            z-index: 15;
+
+            > p {
+                color: #A8AEAE;
+                text-align: center;
+                font-family: 'Plus Jakarta Sans', sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 30px;
+                max-width: 1500px;
+                margin-bottom: 45px;
+            }
+
+            > h1 {
+                color: white;
+                font-size: 80px;
+                margin-bottom: 15px;
+            }
+
+            > h2 {
+                color: #A8AEAE;
+                text-align: center;
+                font-family: 'Plus Jakarta Sans', sans-serif;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 30px;
+                max-width: 1500px;
+                margin-bottom: 45px;
+            }
+
+            > h4 {
+                color: #A8AEAE;
+                text-align: center;
+                font-family: 'Plus Jakarta Sans', sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 30px;
+                max-width: 1500px;
+                margin-bottom: 45px;
+            }
+
+            > h5 {
+                color: #A8AEAE;
+                text-align: center;
+                font-family: 'Plus Jakarta Sans', sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 30px;
+                max-width: 1500px;
+                margin-bottom: 45px;
+            }
+
+            & div {
+                display: inline-flex;
+                padding: 16px 28px;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                border-radius: 32px;
+                margin-right: 20px;
+                background: linear-gradient(180deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.01) 100%);
+                box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+                transition-duration: 0.3s;
+
+                &:hover {
+                    transition-duration: 0.3s;
+                    scale: 1.20;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                }
+
+                & a {
+                    color: #A8AEAE;
+                    font-weight: 400;
+                    text-decoration: none;
+                }
+            }
+        }
     }
-
-  .card {
-    width: 11.875em;
-    height: 7.5em;
-    background: rgb(7, 24, 46);
-    position: relative;
-    display: flex;
-    place-content: center;
-    place-items: center;
-    overflow: hidden;
-    border-radius: 20px;
-    text-align: center;
-    float: left;
-    margin-left: 20%;
-  }
-      
-  .card h2 {
-        z-index: 1;
-        color: white;
-        /* font-size: 1em; */
-        
-  }
-  
-  a {color : white;
-    text-align: center;
-    color: white;
-    font-family: "Fredoka", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 520;
-    font-style:bold;
-    font-variation-settings:
-      "wdth" 100;
-  }
-  
-  .card::before {
-        content: '';
-        position: absolute;
-        width: 62.5em;
-        background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
-        height: 200%;
-        animation: rotBGimg 2s linear infinite;
-        transition: all 0.2s linear;
-      }
-      
-      @keyframes rotBGimg {
-        from {
-          transform: rotate(0deg);
-        }
-      
-        to {
-          transform: rotate(360deg);
-        }
-      }
-      
-      .card::after {
-        content: '';
-        position: absolute;
-        background: rgb(25, 25, 25);
-        ;
-        inset: 5px;
-        border-radius: 15px;
-      } 
-  
-  #SecondBloc{margin-left: 3%;}
-
-  
+}

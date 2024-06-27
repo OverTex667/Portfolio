@@ -1,0 +1,112 @@
+body {
+    margin-top: 5%;
+    margin-right: 20%;
+    margin-bottom: 30px;
+    margin-left: 20%;
+    background-color : rgb(10, 10, 10);
+    background-image: url(../Images/téléchargé.svg);
+    background-size: 100%;
+  }
+  
+  h1 {
+    text-align: left;
+    color: white;
+    font-size: 2.25em;
+    font-family: "Rowdies", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  h2 {
+    text-align: left;
+    color: white;
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 520;
+    font-style:normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+
+  h3 {
+    text-align: left;
+    color: white;
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 520;
+    font-style:normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+  
+  img {
+    border-radius: 50%;
+    width : 186px;
+    height : 186px;
+    }
+
+  .card {
+    width: 11.875em;
+    height: 7.5em;
+    background: rgb(7, 24, 46);
+    position: relative;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    text-align: center;
+    float: left;
+    margin-left: 20%;
+  }
+      
+  .card h2 {
+        z-index: 1;
+        color: white;
+        /* font-size: 1em; */
+        
+  }
+  
+  a {color : white;
+    text-align: center;
+    color: white;
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 520;
+    font-style:bold;
+    font-variation-settings:
+      "wdth" 100;
+  }
+  
+  .card::before {
+        content: '';
+        position: absolute;
+        width: 62.5em;
+        background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
+        height: 200%;
+        animation: rotBGimg 2s linear infinite;
+        transition: all 0.2s linear;
+      }
+      
+      @keyframes rotBGimg {
+        from {
+          transform: rotate(0deg);
+        }
+      
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      
+      .card::after {
+        content: '';
+        position: absolute;
+        background: rgb(25, 25, 25);
+        ;
+        inset: 5px;
+        border-radius: 15px;
+      } 
+  
+  #SecondBloc{margin-left: 3%;}
+
+  
