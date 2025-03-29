@@ -1,77 +1,215 @@
 /* Import Font */
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* Main */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Ajouté pour inclure les bordures et le padding dans la taille totale des éléments */
+    box-sizing: border-box;
 }
+
+li, a , button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+/*.logo {
+    cursor: pointer;
+}*/
+
+.Titre {
+    font-family: "Plus Jakarta Sans";
+    color: rgb(240, 240, 240);
+    padding-right: 20%;
+}
+
+h1 {
+    font-family: "Plus Jakarta Sans";
+    color: rgb(240, 240, 240);
+}
+
+h2 {
+    font-family: "Plus Jakarta Sans";
+    color: rgb(197, 197, 197);
+}
+
+.aContact {
+    font-family: "Plus Jakarta Sans";
+    color: rgb(197, 197, 197);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+h4 {
+    font-family: "Plus Jakarta Sans";
+    color: rgb(197, 197, 197);
+}
+
+.SautTitre {
+    margin: 50px 0;
+    padding: 5px;
+    border: none;
+}
+
+.GrandSaut {
+    margin: 175px 0;
+    padding: 5px;
+    border: none;
+}
+
+p {
+    margin: 15px 0;
+    padding: 5px;
+    border: none;
+}
+
+span{ 
+    border: 1px dashed rgb(197, 197, 197); padding: 0px; 
+} 
+
+/* button {
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+} */
+
+/* button:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+} */
 
 /* Different Colors */
 #purple-light {
+    pointer-events: none;
     background-color: #9158c0;
     width: 910px;
     height: 910px;
     top: -50%;
-    left: 0%; /* Ajusté pour éviter le débordement horizontal */
+    left: 0%;
     border-radius: 50%;
-    z-index: 10;
+    z-index: -3;
     position: absolute;
     filter: blur(200px);
     opacity: 0.2;
 }
 
 #blue-light {
+    pointer-events: none;
     background-color: #4e5bcf;
     width: 910px;
     height: 910px;
     top: -50%;
-    right: 0%; /* Ajusté pour éviter le débordement horizontal */
+    right: 0%;
     border-radius: 50%;
-    z-index: 10;
+    z-index: -1;
     position: absolute;
     filter: blur(200px);
     opacity: 0.2;
 }
 
 #dark-light {
+    pointer-events: none;
     background-color: #1d2127;
     width: 1000px;
     height: 1000px;
     bottom: 0%;
-    right: 0%; /* Ajusté pour éviter le débordement horizontal */
+    right: 0%;
     border-radius: 50%;
-    z-index: 5;
+    z-index: -5;
     position: absolute;
     filter: blur(200px);
     opacity: 1;
 }
 
-/* MA PP DISCORD */
 img {
     border-radius: 50%;
-    width: 186px;
-    height: 186px;
+    width: 120px;
+    height: 120px;
+    z-index: 100;
 }
 
+.Buttons {
+    z-index: 100;
+    display: inline-flex;
+    padding: 16px 28px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 32px;
+    margin-right: 20px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.01) 100%);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    transition-duration: 0.3s;
+
+    &:hover {
+        transition-duration: 0.3s;
+        scale: 1.20;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    & a {
+        color: #A8AEAE;
+        font-weight: 400;
+        text-decoration: none;
+    }
+}
 
 /* Body */
 body {
     background-color: #13171C;
     background-image: url("../img/Square.svg");
     background-size: cover;
-    text-align: center;
     margin: 10px 0px 20px 0;
+}
 
-    & main {
+.Creations {
+    padding-left: 175px;
+}
+
+.Home {
+    text-align: center;
+}
+
+.Games {
+    text-align: center;
+}
+
+.Contact {
+    text-align: center;
+}
+
+
+.video-container {
+    display: flex;
+    align-items: center; /* Aligne verticalement */
+    gap: 40px; /* Espace entre la vidéo et le texte */
+}
+
+.video-container h2 {
+    max-width: 550px; /* Ajuste la largeur du texte */
+}
+
+/*     & main {
         font-family: 'Plus Jakarta Sans', sans-serif;
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column; /* Ajouté pour organiser les enfants en colonne */
+        flex-direction: column;
 
-        .red {
+         .red {
             color: white;
             font-size: 60px;
             margin-bottom: 15px;
@@ -130,31 +268,5 @@ body {
                 max-width: 1500px;
                 margin-bottom: 45px;
             }
-
-            & div {
-                display: inline-flex;
-                padding: 16px 28px;
-                justify-content: center;
-                align-items: center;
-                gap: 10px;
-                border-radius: 32px;
-                margin-right: 20px;
-                background: linear-gradient(180deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.01) 100%);
-                box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-                transition-duration: 0.3s;
-
-                &:hover {
-                    transition-duration: 0.3s;
-                    scale: 1.20;
-                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-                }
-
-                & a {
-                    color: #A8AEAE;
-                    font-weight: 400;
-                    text-decoration: none;
-                }
-            }
         }
-    }
-}
+    }*/
